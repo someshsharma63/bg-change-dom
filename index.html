@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select boxes</title>
+</head>
+<style>
+    *
+    {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .box
+    {
+        width: 300px;
+        height: 280px;
+        background-color: green;
+        border: 2px solid black;
+        margin: 10px 30px;
+    }
+    .allboxes
+    {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+</style>
+<body>
+    <div class="allboxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    <div class="allboxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
+
+<script>
+    
+    let box=document.querySelectorAll(".box");
+    
+    box.forEach((dummmy)=>
+{
+    dummmy.addEventListener('click',()=>
+{
+    dummmy.style.background="yellow"
+})
+})
+</script>
